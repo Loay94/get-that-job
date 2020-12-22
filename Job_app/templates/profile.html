@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/profile_style.css' %}">
+    <title> Profile </title>
+</head>
+<body>
+    <main>
+        <img src="{% static 'images/image.jpg' %}" alt="user Profile image" />
+    <div class="info">
+        <fieldset>
+            <legend>User Information</legend>
+            <h6>First Name: [User name]</h6>
+            <h6>Last Name: [Surname] </h6>
+            <h6>Email: [Email]</h6>
+            <h6>Birthday: [date]</h6>
+            <h6>Education: []</h6>
+            <h6>Field of Experience: []</h6>
+            <h6>Interests</h6>
+            #List Display #
+            <ul>
+                <li> for loop from check box</li>
+            </ul>
+            <h6>About</h6>
+            <h6>Booked Session</h6>
+            #jQuery slide down > displays booked sessions#
+        </fieldset>
+        <fieldset>
+            <legend>Edit</legend>
+            <form action="/register" method="POST">
+                {% csrf_token %}
+                <div class="form-group row">
+                    <label for="first_name" class="col-form-label"> First Name</label>
+                    <div><input type="text" class="form-control" name="first_name" id="first_name" placeholder="name" required></div>
+                </div>
+                <div class="form-group row">
+                    <label for="last_name" class="col-form-label"> Last Name</label>
+                    <div><input type="text" name="last_name" id="last_name" placeholder="surname" class="form-control" required></div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-form-label"> Email</label>
+                    <div><input type="email" name=email id="email" placeholder="name@example.com" class="form-control" required></div>                    
+                </div>
+                <div class="form-group row">
+                    <label for="password" class="col-form-label">Password</label>
+                    <div><input type="password" name="password" id="password" placeholder="password" class="form-control" required></div>
+                </div>
+                <div class="form-group row">
+                    <label for="password_confirm" class="col-form-label">Confirm Password</label>
+                    <div><input type="password" name="password_confirm" id="password_confirm" placeholder="confrim password" class="form-control" required></div>
+                </div>
+                <div class="form-group row">
+                    <label for="birthDay" class="col-form-label">Birthday</label>
+                    <div><input type="date" name="birthDay"  id="birthDay" class="form-control"></div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Agree to Terms and Conditions</label>
+                    </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>   
+            </form>
+        </fieldset>
+    </div>
+    </main>
+</body>
+</html>

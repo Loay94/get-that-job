@@ -1,0 +1,25 @@
+main{
+    display: inline;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset{
+    border: 1px solid rgb(44, 195, 217);
+    padding: 0px 15px 15px 15px;
+    width: 440px;
+    text-align: center;
+}
+legend{
+    color:rgb(154, 172, 175);
+}
+
+/* background-color: #9aacaf;
+text color: #1b3438;
+styling color: background-color: #2cc3cc;
+
+sky blue rgb(44, 195, 217)
+dark grey  rgb(27, 52, 56)
+light grey rgb(154, 172, 175)  */

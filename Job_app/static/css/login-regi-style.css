@@ -1,0 +1,48 @@
+main{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+}
+fieldset{
+    border: 1px solid rgb(61, 61, 148);
+    padding: 0px 15px 15px 15px;
+    width: 440px;
+    text-align: center;
+}
+legend{
+    margin-bottom: 30px;
+}
+.row{
+    flex-wrap: nowrap;
+}
+.form-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+label{
+    width: 100px;
+}
+.col-form-label{
+    text-align: start;
+    margin-right:25px;
+    font-weight: bold;
+}
+form{
+    display: inline-block;
+}
+.form-control{
+    width: 240px;
+    box-shadow: 2px 2px rgb(155, 144, 144);
+}
+.btn{
+    box-shadow: 2px 3px rgb(60, 60, 83);
+}
+:placeholder-shown{
+    font-style: italic;
+}
+
