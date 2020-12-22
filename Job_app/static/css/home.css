@@ -1,7 +1,9 @@
 .container{
+    
     margin: 0 auto;
     padding: 0px;
     max-width: 97%;
+    background-color: #9aacaf;
 }
 h1{
     font-weight: bold;
