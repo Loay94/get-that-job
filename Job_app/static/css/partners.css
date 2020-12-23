@@ -45,5 +45,8 @@ a{
     padding-bottom: 30px;
 }
 legend{
-    font-size: 2px;
+    font-size: 20px;
+}
+li{
+    padding: 20px;
 }
