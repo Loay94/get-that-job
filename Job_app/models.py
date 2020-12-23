@@ -7,30 +7,29 @@ import bcrypt
 class UserManager(models.Manager):
     def register_validator(self, user_info):
         errors = {}
-        #names
+#names
         if (str.isalpha(user_info['first_name'])) == False: #user_info['first_name'] is from the form of registration
             if len(user_info['first_name']) <4 :
                 errors["firstname"] = "First Name should be more than 2 characters." #["first_name"] is a key for errors dictionary can be any word
         if (str.isalpha(user_info['last_name'])) == False:
             if len(user_info['last_name']) <4 :
                 errors["lastname"] = "Last Name should be more than 2 characters."
-        #email  
+#email  
         EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$') 
         new_user = User.objects.filter(email = user_info['email'])
         if not EMAIL_REGEX.match(user_info['email']): #checking if email matches the regex           
             errors['email'] = "Invalid email address!"
         if len(new_user):
             errors['email'] = "Email already exists.. Try another!"
-    #password
+#password
         if len(user_info['password']) < 8:
             errors["password"] = "Password should be at least 8 characters."
         if user_info['password'] != user_info['password_confirm']:
             errors['password_confirm']= "Password Dosent Match!"
-    #birthday
+#birthday
             now = timezone.now()
             if (user_info['birthday'] > str(now)):
                 errors['birthday'] = "Invalid Birth date. Birthday should be in the past"
-
             today = datetime.now().strftime("%Y%m%d")
             user_birthday = user_info['birthday'].replace("-", "")
             # if len(user_info["birthday"]) > 0 and datetime.strptime(user_info["birthday"], '%Y-%m-%d') >= datetime.today() :
@@ -67,6 +66,9 @@ class User(models.Model):
     birthday=models.DateField(null = True)
     education=models.TextField(null=True)
     field_of_experience=models.TextField(null=True)
+    birthday=models.DateField()
+    education=models.TextField()
+    field_of_experience=models.TextField()
     image = models.ImageField(upload_to="images/",blank=True)
     password=models.CharField(max_length=255)
     interests=models.TextField(null=True)
@@ -100,6 +102,8 @@ class Story(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
+#Data Base Funtions
+
 def add_new_user(new_user):
     user = User.objects.filter(email = new_user['email'])
     if len(user) == 0:
@@ -118,4 +122,3 @@ def user_login(login_info):
         if bcrypt.checkpw(password.encode(), user_exist[0].password.encode()):
             return user_exist[0]
     return False
-

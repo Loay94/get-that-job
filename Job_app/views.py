@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import render, redirect,HttpResponse
 from . import models
 from django.contrib import messages
@@ -22,7 +23,8 @@ def registration(request):
                     request.session['first_name'] = user.first_name
                     request.session['last_name'] = user.last_name
                 return redirect('/in')
-    return redirect('/register-page')  
+    return redirect('/register-page') 
+
 #for login
 def login(request):
     if request.method =='POST':
@@ -51,3 +53,11 @@ def home(request):
 # to view the main page after sign in :
 def home_in(request):
     return render(request, "home_in.html")
+
+#adding 
+def booking(request):
+    return render(request,'booking.html')
+
+#adding partners
+def partner(request):
+    return render(request,'partners.html')

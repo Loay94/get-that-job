@@ -26,10 +26,18 @@ li{
     background-color: rgb(44 195 217);
 }
 button.btn.btn-outline-success.my-2.my-sm-0 {
+<<<<<<< HEAD
+    
+=======
+>>>>>>> b99e7a3388ad5f6dc4404a631cc28c9e5c0674be
     background-color: rgb(44 195 217);
     color:rgb(27 52 56);
     border-color: rgb(27 52 56);
     margin-right: 13px;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> b99e7a3388ad5f6dc4404a631cc28c9e5c0674be
 }
 label.nav-item.active{
     font-size: larger;
