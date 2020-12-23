@@ -23,8 +23,6 @@ def registration(request):
                     request.session['last_name'] = user.last_name
                 return redirect('/in')
     return redirect('/register-page')  
-# 
-
 #for login
 def login(request):
     if request.method =='POST':
