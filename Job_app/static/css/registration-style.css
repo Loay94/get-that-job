@@ -1,3 +1,6 @@
+body{
+    font-family: cursive;
+}
 /* Header and Navigation bar ****************************************************/
 .container{
     margin: 0 auto;
@@ -51,7 +54,6 @@ main{
     width: 1000px;
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
     top: 10%;
     left: 13%;
 }
@@ -63,6 +65,8 @@ fieldset{
 }
 legend{
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 .row{
     flex-wrap: nowrap;

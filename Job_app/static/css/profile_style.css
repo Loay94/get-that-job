@@ -1,3 +1,6 @@
+body{
+    font-family: cursive;
+}
 /* Header and Navigation bar ****************************************************/
 .container{
     margin: 0 auto;
@@ -71,7 +74,6 @@ legend{
 .col-form-label{
     text-align: start;
     margin-right:25px;
-    font-weight: bold;
 }
 .form-group{
     display: flex;

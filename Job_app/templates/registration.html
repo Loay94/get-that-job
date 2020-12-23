@@ -61,10 +61,10 @@
     </div>
     <main>
         <fieldset>
-            <legend><div>
-                <img src="{% static 'img/profile-pic.png' %}" alt="user Profile image" height="100px" width="100px" />
-                </div>   <h2>Register</h2></legend>
-            <form action="/" method="POST">
+            <legend>
+                <img src="{% static 'img/profile-pic.png' %}" alt="user Profile image" height="50px" width="50px" /><h2>Register</h2>
+            </legend>
+            <form action="/register" method="POST">
                 {% csrf_token %}
                 <div class="form-group row">
                     <label for="first_name" class="col-form-label"> First Name</label>
