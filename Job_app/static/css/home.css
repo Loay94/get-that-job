@@ -16,6 +16,9 @@ h1{
 form.form-inline {
     margin-top: 3px;
 }
+#more {
+    display: none;
+}
 .button.btn.btn-outline-success.my-2.my-sm-0{
     width: 108px;
 }

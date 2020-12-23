@@ -1,24 +1,43 @@
 <!doctype html>
 <html lang="en">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";}
+        else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";}
+        }
+
+    </script>
     <head>
         {% load static %}
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/home.css' %}"> 
-    
-    <!-- Bootstrap CSS -->
-    
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}"> 
+        
+        <!-- Bootstrap CSS -->
+        
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <img src="{% static 'img/logo.png' %}" />
-                </div>
-                <div class="col-9">
+                
+                    <img src="{% static 'img/logo.png' %}"  class="col-3 ">
+                
+                <div class="col-9 ">
                     <h1>Welcome to Get That Job Website!</h1>
                 </div>
             </div>
@@ -46,14 +65,16 @@
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                             </form>
                         </li> -->
-                            <form class="form-inline">
+                            <form action="/log_in"  method="POST" class="form-inline">  <!-- go to home page if the email&password true or redirect with show what's the wrong-->
+                                {% csrf_token %}
                                 <label class="nav-item active"> Email:</label>
-                                <input class="form-control mr-sm-2"  placeholder="Email">
+                                <input class="form-control mr-sm-2"  placeholder="Email" name="email">
                                 <label class="nav-item active"> Password:</label>
-                                <input class="form-control mr-sm-2"  placeholder="Password">
+                                <input class="form-control mr-sm-2"  placeholder="Password" name="password">
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log-In</button>
                             </form>
-                            <form class="form-inline">
+                            <form action="/register" method="POST" class="form-inline"> <!-- go to register page -->
+                                {% csrf_token %}
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign In</button>
                             </form>
                         <!-- <li class="nav-item active">
@@ -66,10 +87,8 @@
                 <div id="about" class="jumbotron">
                     <h3>Introduction About Get That Job : </h3>
                     <hr>
-                    <p class="justified">  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <br />
-                    <a href="#" rel="noopener noreferrer" target="_blank">Read More</a> 
-                    </p>
+                    <p>imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
                 </div>
                 <div id="about" class="jumbotron">
                     <h3>Book Your Consultant Sessions:</h3>

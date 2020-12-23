@@ -57,3 +57,11 @@ class Story(models.Model):
 #             return user_exist[0]
 #     return False
 
+
+
+def log_in(log_info):
+    user_in_data = User.objects.filter(email=log_info['email'])
+    if len(user_in_data):
+        # if bcrypt.checkpw(log_info['password'].encode(), user_in_data[0].password.encode()):
+        return user_in_data[0]
+    return False
