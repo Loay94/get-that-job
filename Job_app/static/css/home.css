@@ -1,7 +1,8 @@
 .container{
     margin: 0 auto;
     padding: 0px;
-    max-width: 97%;
+    max-width: 98%;
+    background-color:  #9aacaf;
 }
 h1{
     font-weight: bold;
@@ -25,7 +26,7 @@ li{
     background-color: rgb(44 195 217);
 }
 button.btn.btn-outline-success.my-2.my-sm-0 {
-    background-color: red;
+    background-color: rgb(44 195 217);
     color:rgb(27 52 56);
     border-color: rgb(27 52 56);
     margin-right: 13px;
@@ -35,6 +36,8 @@ label.nav-item.active{
     padding-right: 9px;
 }
 .bg-light{
+    margin: 0px 12px;
+    border-radius: 6px;
     background-color: rgb(44 195 217) !important;
 }
 a.nav-link {
