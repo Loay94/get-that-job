@@ -1,0 +1,104 @@
+body{
+    font-family: cursive;
+}
+/* Header and Navigation bar ****************************************************/
+.container{
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 97%;
+}
+h1{
+    font-weight: bold;
+    margin: 83px 0px 0px 23px;
+    font-size: 52px;
+    font-family: cursive;
+}
+.form-control{
+    border: 1px outset #6f42c1;
+}
+.form-inline-login{
+    display: flex;
+}
+form.form-inline {
+    margin-top: 3px;
+}
+.button.btn.btn-outline-success.my-2.my-sm-0{
+    width: 108px;
+}
+li{
+    padding-right: 35px;
+}
+.nav.navbar.navbar-expand-lg.navbar-light{
+    background-color: rgb(44 195 217);
+}
+button.btn.btn-outline-success.my-2.my-sm-0 {
+    color: rgb(27, 52, 56);
+    background-color:  rgb(44, 195, 217) ;
+    border-color: #6610f2/*rgb(154, 172, 175)*/;
+    box-shadow: 2px 4px rgb(154, 172, 175);
+    margin-right: 13px;
+}
+label.nav-item.active{
+    font-size: larger;
+    padding-right: 9px;
+}
+.bg-light{
+    background-color: rgb(44 195 217) !important;
+}
+a.nav-link {
+    font-size: large;
+}
+/* Profile****************************************************/
+main{
+    display: inline;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+fieldset{
+    border: 1px solid#6610f2;
+    padding: 0px 15px 15px 15px;
+    width: 440px;
+    text-align: left;
+}
+user_info{
+
+}
+user edit{
+
+}
+legend{
+    color:rgb(154, 172, 175) /*#6610f2*/;
+}
+.col-form-label{
+    text-align: start;
+    margin-right:25px;
+}
+.form-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row{
+    flex-wrap: nowrap;
+}
+.form-control{
+    box-shadow: 2px 3px rgb(154, 172, 175);
+}
+.btn-primary {
+    color: rgb(27, 52, 56);
+    background-color:  rgb(44, 195, 217) ;
+    border-color: rgb(44, 195, 217);
+    box-shadow: 2px 4px rgb(154, 172, 175);
+}
+:placeholder-shown{
+    font-style: italic;
+}
+/* background-color: #9aacaf;
+text color: #1b3438;
+styling color: background-color: #2cc3cc;
+
+sky blue rgb(44, 195, 217)
+dark grey  rgb(27, 52, 56)
+light grey rgb(154, 172, 175)  */

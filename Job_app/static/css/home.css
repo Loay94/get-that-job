@@ -26,12 +26,10 @@ li{
     background-color: rgb(44 195 217);
 }
 button.btn.btn-outline-success.my-2.my-sm-0 {
-    
     background-color: rgb(44 195 217);
     color:rgb(27 52 56);
     border-color: rgb(27 52 56);
     margin-right: 13px;
-    
 }
 label.nav-item.active{
     font-size: larger;

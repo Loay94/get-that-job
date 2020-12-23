@@ -1,4 +1,12 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect
+from . import models
+# Create your views here.
+
+def registration(request):
+    return render(request,"registration.html")
+
+def profile(request):
+    return render(request,"profile.html")
 
 # to view the main page without sign in:
 def home(request): 
@@ -6,4 +14,6 @@ def home(request):
 # to view the main page after sign in :
 def home_in(request):
     return render(request, "home_in.html")
-# 
+
+
+
