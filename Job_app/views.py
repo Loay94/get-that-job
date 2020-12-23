@@ -6,3 +6,4 @@ def home(request):
 # to view the main page after sign in :
 def home_in(request):
     return render(request, "home_in.html")
+# 
