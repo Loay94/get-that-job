@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">   
+</head>
+<body>
+    <div class="main">
+        <div class="list">
+            <img src="../static/css/img/consultant.png" alt="image">
+            <h3>Consultant Information:</h3>
+            <p>First Name:</p>
+            <p>Last Name:</p>
+            <p>Email:</p>
+            <p>Field of experience:</p>
+            <a href="">visit consultant profile</a>
+        </div>
+        <div class="list">
+            <img src="consultant.png" alt="image">
+            <h3>Consultant Information:</h3>
+            <p>First Name:</p>
+            <p>Last Name:</p>
+            <p>Email:</p>
+            <p>Field of experience:</p>
+            <a href="">visit consultant profile:</a>
+        </div>
+        <div class="list">
+            <img src="consultant.png" alt="image">
+            <h3>Consultant Information:</h3>
+            <p>First Name:</p>
+            <p>Last Name:</p>
+            <p>Email:</p>
+            <p>Field of experience:</p>
+            <a href="" >visit consultant profile:</a>
+        </div>
+    </div>
+    <div class="choice">
+        <form>
+            <lable>Choose your consultant</lable>
+            <select name="choose your consultant" id="consultant_id">
+                <option value="consultant1">Consultant1 name</option>
+                <option value="consultant2">Consultant2 name</option>
+                <option value="consultant3">Consultant3 name</option>
+                <option value="consultant4">Consultant4 name</option>          
+            </select><br>
+        <label for="available dates">Available Dates:</label>
+        <input type="date" id="date" name="Available-date"><br>
+        <label for="booking">Book your session:</label>
+        <input type="date" id="date" name="Available-date">
+
+        </form>
+    
+</body>
+</html>

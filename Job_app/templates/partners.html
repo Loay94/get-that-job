@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners</title>
+    <link rel="stylesheet" href="{% static 'css/partners.css' %}">
+</head>
+<body>
+    <div class="main">
+        <div class="adding">
+            <fieldset>
+                <legend>Add a partner</legend>
+                <form action="/add_partner" method="POST">
+                    <label>Name of company:</label>
+                    <input type="name" id="company-name" name="company"><br>
+                    <label>Field of company:</lable>
+                    <input type="field" id="company-field" name="company"><br>
+                    <label>About:</label>
+                    <textarea></textarea><br>
+                    <button value="sumbit">Add partner</button>
+                </form>
+            </fieldset>
+        </div>
+        <div class="list">
+            <Fieldset>
+                <legend>Partners list</legend>
+                <ul>
+                    <li>[ Company1 Name ]</li><img src="#" alt="logo">
+                    <li>[ Company2 Name ]</li><img src="#" alt="logo">
+                    <li>[ Company3 Name ]</li><img src="#" alt="logo">
+                    <li>[ Company4 Name ]</li><img src="#" alt="logo">
+                    <li>[ Company5 Name ]</li><img src="#" alt="logo">
+                </ul>
+            </Fieldset>
+        </div>
+    </div>
+</body>
+</html>

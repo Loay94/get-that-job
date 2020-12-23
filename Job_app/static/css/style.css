@@ -1,0 +1,39 @@
+.main{  
+    display: flex;
+  
+    color: #1b3438;
+}
+.list{
+    width: 250px;
+    border:2px solid #2cc3cc;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #1b3438;
+    
+   
+}
+.list img{
+    width: 40px;
+}
+.choice{
+    margin: 20px;
+    display: flex;
+    color: #1b3438;
+    padding: 10px;
+    
+}
+.choice select{
+    background-color: #2cc3cc;
+    color: #1b3438;
+}
+.choice label{
+    padding-bottom: 10px;
+}
+
+a{
+    color: #2cc3cc;
+}
+input{
+    border: 1px solid #2cc3cc;
+}
