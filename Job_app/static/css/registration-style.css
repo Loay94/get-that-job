@@ -45,58 +45,52 @@ label.nav-item.active{
 a.nav-link {
     font-size: large;
 }
-/* Profile****************************************************/
+/* Registration****************************************************/ 
 main{
-    display: inline;
-}
-.info{
+    margin: 0 auto;
+    width: 1000px;
     display: flex;
     justify-content: space-evenly;
+    position: absolute;
+    top: 10%;
+    left: 13%;
 }
 fieldset{
-    border: 1px solid#6610f2;
+    border: 1px solid rgb(61, 61, 148);
     padding: 0px 15px 15px 15px;
     width: 440px;
-    text-align: left;
-}
-user_info{
-
-}
-user edit{
-
+    text-align: center;
 }
 legend{
-    color:rgb(154, 172, 175) /*#6610f2*/;
+    margin-bottom: 30px;
 }
-.col-form-label{
-    text-align: start;
-    margin-right:25px;
-    font-weight: bold;
+.row{
+    flex-wrap: nowrap;
 }
 .form-group{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.row{
-    flex-wrap: nowrap;
+label{
+    width: 100px;
+}
+.col-form-label{
+    text-align: start;
+    margin-right:25px;
+    font-weight: bold;
+}
+form{
+    display: inline-block;
 }
 .form-control{
-    box-shadow: 2px 3px rgb(154, 172, 175);
+    width: 240px;
+    box-shadow: 2px 2px rgb(155, 144, 144);
 }
-.btn-primary {
-    color: rgb(27, 52, 56);
-    background-color:  rgb(44, 195, 217) ;
-    border-color: rgb(44, 195, 217);
-    box-shadow: 2px 4px rgb(154, 172, 175);
+.btn{
+    box-shadow: 2px 3px rgb(60, 60, 83);
 }
 :placeholder-shown{
     font-style: italic;
 }
-/* background-color: #9aacaf;
-text color: #1b3438;
-styling color: background-color: #2cc3cc;
 
-sky blue rgb(44, 195, 217)
-dark grey  rgb(27, 52, 56)
-light grey rgb(154, 172, 175)  */
