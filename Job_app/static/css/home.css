@@ -1,0 +1,54 @@
+.container{
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 98%;
+    background-color:  #9aacaf;
+}
+h1{
+    font-weight: bold;
+    margin: 83px 0px 0px 23px;
+    font-size: 52px;
+    font-family: cursive;
+}
+.form-inline-login{
+    display: flex;
+}
+form.form-inline {
+    margin-top: 3px;
+}
+.button.btn.btn-outline-success.my-2.my-sm-0{
+    width: 108px;
+}
+li{
+    padding-right: 35px;
+}
+.nav.navbar.navbar-expand-lg.navbar-light{
+    background-color: rgb(44 195 217);
+}
+button.btn.btn-outline-success.my-2.my-sm-0 {
+    
+    background-color: rgb(44 195 217);
+    color:rgb(27 52 56);
+    border-color: rgb(27 52 56);
+    margin-right: 13px;
+    
+}
+label.nav-item.active{
+    font-size: larger;
+    padding-right: 9px;
+}
+.bg-light{
+    margin: 0px 12px;
+    border-radius: 6px;
+    background-color: rgb(44 195 217) !important;
+}
+a.nav-link {
+    font-size: large;
+}
+div#about {
+    padding: 27px !important;
+    margin: 11px 40px;
+}
+a{
+    float: right;
+}
