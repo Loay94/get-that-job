@@ -15,6 +15,7 @@ class User(models.Model):
     birthday=models.DateField()
     education=models.TextField()
     field_of_experience=models.TextField()
+    image = models.ImageField(upload_to="images/",blank=True)
     password=models.CharField(max_length=255)
     interests=models.TextField()
     about=models.TextField()
@@ -35,6 +36,7 @@ class Partner(models.Model):
     name=models.CharField(max_length=255)
     field_of_company=models.TextField()
     about=models.TextField()
+    image = models.ImageField(upload_to="images/",blank=True)
     admin=models.ForeignKey(User,related_name='partner', on_delete=models.CASCADE)# foreignkey one to many user with partner
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
