@@ -97,4 +97,14 @@ form{
 :placeholder-shown{
     font-style: italic;
 }
+.form-check-label{
+    display: inline;
+}
 
+/* background-color: #9aacaf;
+text color: #1b3438;
+styling color: background-color: #2cc3cc;
+
+sky blue rgb(44, 195, 217)
+dark grey  rgb(27, 52, 56)
+light grey rgb(154, 172, 175)  */
